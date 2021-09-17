@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+//   Nested function can access local variables of the enclosing function. In this case, "nestedFunction" is the child function to the parent function - "myFunction". Child functions has access to parent's function state, variable and parameters. However, parent function doesn't have access to child's properties, state or variables. 
 
 
 
