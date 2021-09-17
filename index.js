@@ -118,15 +118,6 @@ return displayNamesList
     * The last parameter accepts a callback
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
-
-  function kitchen(ing1, ing2, chef){
-    return chef(ing1, ing2);
-  }
-  
-  function pizzaChef(ing1, ing2){
-    return `I took ${ing1} and ${ing2} and I made you pizza 🍕`;
-  }
-
   
   function consume(a, b, cb){
     return cb(a, b)
@@ -139,10 +130,10 @@ return displayNamesList
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
-function add(/*Your Code Here */){
-    /*Your Code Here*/
-  }
-
+function add(a, b){
+  return a+b
+}
+console.log("task 6:", consume(3 ,5 , add))
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
