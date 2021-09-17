@@ -68,17 +68,21 @@ const zooAnimals = [
 return displayNamesList
   }
   console.log("task 2 a, ArrayContaining", animalNames())
+
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
   Using lowerCaseNames use .map() to create a new array of strings with the animal's names in lowercase and return the new array. 
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(data){
+    const lowerCaseNamesList = data.map(function(item){
+      return item.animal_name.toLowerCase()
+    })
+    return lowerCaseNamesList
   }
   
-  
+  console.log("task 2b: ",lowerCaseNames(zooAnimals))
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
